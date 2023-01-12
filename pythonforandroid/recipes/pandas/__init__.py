@@ -7,7 +7,7 @@ class PandasRecipe(CppCompiledComponentsPythonRecipe):
     version = '1.0.3'
     url = 'https://github.com/pandas-dev/pandas/releases/download/v{version}/pandas-{version}.tar.gz'  # noqa
 
-    depends = ['cython', 'numpy', 'pytz', 'libbz2', 'liblzma']
+    depends = ['cython', 'numpy', 'pytz', 'libbz2']
 
     python_depends = ['python-dateutil']
     patches = ['fix_numpy_includes.patch']
